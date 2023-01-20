@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tick tac toe</title><link rel="stylesheet"href="tictactoe.css">
+</head>
+<body>
+    <h1>
+        Tick tac toe
+    </h1>
+    <center>
+    <table>
+        <tr>
+            <td>
+                <img onclick="playTicTacToe(this.id)"id="one" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="two" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="three" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="four" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="five" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="six" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+        </tr> <tr>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="seven"  src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="eight" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+            <td>
+                <img onclick="playTicTacToe(this.id)" id="nine" src="https://wallpaper.dog/large/10702687.jpg"height="150px" width="150px">
+            </td>
+        </tr>
+    </center>
+
+
+            
+                
+            
+            
+            
+
+        
+
+    </table>
+    <script>
+        let chance=1
+        let tictactoe="https://wallpaper.dog/large/10702687.jpg"
+        function playTicTacToe(box){
+            let play=document.getElementById(box).src
+            if (play==tictactoe){
+            if(chance%2==0){
+                
+
+            
+            document.getElementById(box).src="https://e7.pngegg.com/pngimages/482/392/png-clipart-black-x-mark-tic-tac-toe-oxo-holiday-tic-tac-toe-game-blue-cross-miscellaneous-angle-thumbnail.png"
+
+        }
+        else{
+            document.getElementById(box).src="https://www.pngitem.com/pimgs/m/501-5018182_thumb-image-tic-tac-toe-circle-png-transparent.png"
+       
+        }
+        chance=chance+1
+    }}
+
+    </script>
+    
+</body>
+</html>
